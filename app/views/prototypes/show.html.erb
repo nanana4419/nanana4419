@@ -45,7 +45,7 @@
             <li class="comments_list">
               <%= comment.content %>
                 <p>
-              <%= link_to comment.user.name, user_path(@prototype.user.id) %>
+              <%= link_to comment.user.name, user_path(comment.user_id) %>
                 </p>
             </li>
           <% end %>
